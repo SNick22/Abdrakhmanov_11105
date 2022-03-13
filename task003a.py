@@ -8,4 +8,6 @@ while i < len(a):
         i -= 1
     else:
         i += 1
-print(a.pop())
+
+if __name__ == '__main__':
+    print(a.pop())
