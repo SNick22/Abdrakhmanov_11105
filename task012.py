@@ -26,10 +26,10 @@ def cur_calculate(a1: int) -> typing.Callable:
     return calc2
 
 
+new_func = partial(calculate, a1=2, a3=5, a5=1, a7=8, a9=0)
 if __name__ == '__main__':
     print(calculate(2, '/', 3, '+', 4, '+', 5, '*', 6))
     print(cur_calculate(2)('/')(3)('+')(4)('+')(5)('*')(6))
-    new_func = partial(calculate, a1=2, a3=5, a5=1, a7=8, a9=0)
     print(new_func(a2='+', a4='+', a6='+', a8='+'))
     print(new_func(a2='-', a4='+', a6='/', a8='*'))
     print(new_func(a2='-', a4='-', a6='-', a8='-'))
