@@ -1,0 +1,17 @@
+# variant 2
+with open('task5.txt', 'w') as file:
+    file.write('10 ')
+    file.write('111\n')
+    file.write('1 ')
+    file.write('01 ')
+    file.write('11 ')
+    file.write('10 ')
+    file.write('010 ')
+    file.write('110 ')
+    file.write('101 ')
+    file.write('0101 ')
+    file.write('1101\n')
+    file.write('11 ')
+    file.write('1100 ')
+    file.write('1101 ')
+    file.write('1111\n')
