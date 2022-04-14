@@ -1,0 +1,3 @@
+\bq\S*[^e\s](?:ee)*e\b
+\be\Sj\S*\\\S\b
+\b\S*(?:[aeiouyAEIOUY][^aeiouyAEIOUY\s])+\S*\b
