@@ -24,4 +24,20 @@ with open('text.txt', 'a', encoding='utf-8') as file:
         file.write(f'\n{i[0]}: {i[1]}')
     file.write(f'\n\n{reduce(lambda a, b: a if len(a) > len(b) else b, words)}')
     file.write(f'\n\n{cnt.most_common()[0][0]}')
-    
+
+
+def shift(word):
+    if len(word) > 4:
+        if len(word) % 2 == 0:
+            return word[-1] + word[:-1]
+        else:
+            return word[1:] + word[0]
+    else:
+        return word
+
+
+for word in words:
+    text = text.replace(word, shift(word), 1)
+
+with open('text.txt', 'a', encoding='utf-8') as file:
+    file.write(f'\n\n{text}')
